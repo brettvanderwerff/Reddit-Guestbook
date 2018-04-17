@@ -1,9 +1,9 @@
-import sqlite3
+import sqlite3 as sql
 
 def make_db():
     '''Makes database that usernames and messages will be saved to.
     '''
-    conn = sqlite3.connect('database.bd')
+    conn = sql.connect('database.db')
     print('database created succesfully')
     conn.execute('CREATE TABLE users (username TEXT, message TEXT)')
     print('Table created succesfully')
