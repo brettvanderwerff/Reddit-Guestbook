@@ -1,4 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>{{ list }}</h1>
+<div class="container">
+  <h2>The r/learnpython Guest book</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Message</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for row in cursor %}
+        <tr>
+            {% for item in row %}
+            <td>{{ item }}</td>
+            {% endfor %}
+         </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+</div>
 {% endblock %}

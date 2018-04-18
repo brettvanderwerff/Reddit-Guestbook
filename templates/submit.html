@@ -6,11 +6,17 @@
     {{ form.hidden_tag() }}
       <p>
         {{ form.username.label }}:<br>
-        {{ form.username(size=30) }} <br>
+        {{ form.username }} <br>
+        {% for error in form.username.errors %}
+        <font color="red">[{{ error }}]</font>
+        {% endfor %}
       </p>
       <p>
         {{ form.message.label }}:<br>
         {{ form.message(rows='5',cols='50') }} <br>
+        {% for error in form.message.errors %}
+        <font color="red">[{{ error }}]</font>
+        {% endfor %}
       </p>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
