@@ -25,8 +25,8 @@ def submit():
 def view():
     conn = sql.connect('database.db')
     cursor = conn.execute('SELECT username, message from users')
-    return render_template('view.html')
+    return render_template('view.html', cursor=cursor)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
 
