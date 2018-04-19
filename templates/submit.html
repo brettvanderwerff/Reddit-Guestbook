@@ -1,23 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container">
-  <h2>Sign the guestbook</h2>
-  <form action="/submit" method="POST">
+  <h2>Sign the r/learnpython Guest Book :)</h2>
+  <form action="/submit" method="POST" role="form">
     {{ form.hidden_tag() }}
-      <p>
-        {{ form.username.label }}:<br>
-        {{ form.username }} <br>
-        {% for error in form.username.errors %}
-        <font color="red">[{{ error }}]</font>
-        {% endfor %}
-      </p>
-      <p>
-        {{ form.message.label }}:<br>
-        {{ form.message(rows='5',cols='50') }} <br>
-        {% for error in form.message.errors %}
-        <font color="red">[{{ error }}]</font>
-        {% endfor %}
-      </p>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username">
+    </div>
+      {% for error in form.username.errors %}
+        <div class="alert alert-warning">[{{ error }}]</div>
+      {% endfor %}
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <input type="text" class="form-control" id="message" placeholder="Enter Message" name="message">
+    </div>
+      {% for error in form.message.errors %}
+        <div class="alert alert-warning">[{{ error }}]</div>
+      {% endfor %}
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>

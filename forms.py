@@ -1,7 +1,7 @@
-from flask_wtf import Form
+from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField
 from wtforms.validators import DataRequired
 
-class SubmitForm(Form):
+class SubmitForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     message = TextAreaField('Message', validators=[DataRequired()])
