@@ -1,5 +1,7 @@
+from create_db import make_db
 from flask import Flask, render_template, url_for, redirect
 from forms import SubmitForm
+from pathlib import Path
 import sqlite3 as sql
 
 app = Flask(__name__)
@@ -28,5 +30,7 @@ def view():
     return render_template('view.html', cursor=cursor)
 
 if __name__ == '__main__':
+    if not Path('database.db').is_file():
+        make_db()
     app.run(debug=True)
 

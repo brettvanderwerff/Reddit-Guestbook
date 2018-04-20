@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container">
-  <h2>Sign the r/learnpython Guest Book :)</h2>
+  <br><br>
+  <div class="row justify-content-sm-center">
+      <h1>Sign the r/learnpython Guest Book :)</h1>
+  </div>
   <form action="/submit" method="POST" role="form">
     {{ form.hidden_tag() }}
     <div class="form-group">
@@ -9,14 +12,14 @@
       <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username">
     </div>
       {% for error in form.username.errors %}
-        <div class="alert alert-warning">[{{ error }}]</div>
+        <div class="alert alert-warning">{{ error }}</div>
       {% endfor %}
     <div class="form-group">
       <label for="message">Message:</label>
       <input type="text" class="form-control" id="message" placeholder="Enter Message" name="message">
     </div>
       {% for error in form.message.errors %}
-        <div class="alert alert-warning">[{{ error }}]</div>
+        <div class="alert alert-warning">{{ error }}</div>
       {% endfor %}
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
