@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField
-from wtforms.validators import DataRequired
+from wtforms.validators import DataRequired, Length
 
 class SubmitForm(FlaskForm):
-    username = StringField('Username', validators=[DataRequired()])
-    message = TextAreaField('Message', validators=[DataRequired()])
+    username = StringField('Username', validators=[DataRequired(), Length(max=20)])
+    message = TextAreaField('Message', validators=[DataRequired(), Length(max=100)])
