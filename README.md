@@ -44,15 +44,15 @@ How to run:
 Useage:
 ~~~~~~~
 
-**The landing page**
+**The landing page:**
 
 ![Alt text](/readme_images/home.png?raw=true "The landing page")
 
-**Enter you name/username and a message**
+**Enter you name/username and a message:**
 
 ![Alt text](/readme_images/submit.png?raw=true "Enter you name/username and a message")
 
-**View your submission and see what other people wrote :)**
+**View your submission and see what other people wrote :):**
 
 ![Alt text](/readme_images/view.png?raw=true "View your submission and see what other people wrote :)")
 
