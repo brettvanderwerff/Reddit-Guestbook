@@ -25,8 +25,21 @@ How to run:
 
 1. Clone repo
 2. Open Reddit-Guestbook folder
-3. Open terminal and pip install requirements.txt (i.e. $ pip install -r requirements.txt)
-4. In terminal, use python to run rgb.py (i.e. $ python3 rgb.py)
+3. Open terminal and pip install requirements.txt (i.e. `$ pip install -r requirements.txt`)
+4. In terminal, use python to run rgb.py (i.e. `$ python3 rgb.py`)
 5. Open browser and navigate to the localhost port 5000 (i.e. http://127.0.0.1:5000/)
 6. Enjoy the program :) 
+
+**With Docker**
+1. Install Docker if you do not already have it (See Docker website https://docs.docker.com/install/)
+2. Clone repo
+3. Open Reddit-Guestbook folder
+4. Open terminal
+5. Type: `$ sudo docker build -t reddit-guest-book:latest .`
+6. Type: `4 sudo docker run -d -p 5000:5000 reddit-guest-book`
+7. Open browser and navigate to the localhost port 5000 (i.e. http://127.0.0.1:5000/)
+8. Enjoy the program :)
+
+![Alt text](/readme_images/home.png)
+
 
