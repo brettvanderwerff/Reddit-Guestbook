@@ -40,6 +40,14 @@ How to run:
 7. Open browser and navigate to the localhost port 5000 (i.e. http://127.0.0.1:5000/)
 8. Enjoy the program :)
 
-![Alt text](/readme_images/home.png)
+~~~~~~~
+Useage:
+~~~~~~~
+
+![Alt text](/readme_images/home.png?raw=true "The landing page")
+
+![Alt text](/readme_images/submit.png?raw=true "Enter you name/username and a message")
+
+![Alt text](/readme_images/view.png?raw=true "View your submission and see what other people wrote :)")
 
 
