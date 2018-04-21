@@ -17,3 +17,16 @@ Flask==0.12.2
 
 Flask_WTF==0.14.2
 
+~~~~~~~~~~~~
+How to run:
+~~~~~~~~~~~~
+
+**Without Docker**
+
+1. Clone repo
+2. Open Reddit-Guestbook folder
+3. Open terminal and pip install requirements.txt (i.e. $ pip install -r requirements.txt)
+4. In terminal, use python to run rgb.py (i.e. $ python3 rgb.py)
+5. Open browser and navigate to the localhost port 5000 (i.e. http://127.0.0.1:5000/)
+6. Enjoy the program :) 
+
