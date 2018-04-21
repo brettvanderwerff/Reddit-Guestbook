@@ -32,5 +32,5 @@ def view():
 if __name__ == '__main__':
     if not Path('database.db').is_file():
         make_db()
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
 
