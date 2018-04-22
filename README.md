@@ -30,7 +30,7 @@ How to run:
 5. Open browser and navigate to the localhost port 5000 (i.e. http://127.0.0.1:5000/)
 6. Enjoy the program :) 
 
-**With Docker**
+**With Docker** (on Ubuntu 16.04)
 1. Install Docker if you do not already have it (See Docker website https://docs.docker.com/install/)
 2. Clone repo
 3. Open Reddit-Guestbook folder
