@@ -11,6 +11,8 @@ file_handler.setLevel(WARNING)
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'your secret key goes here' #ToDo replace this with your secret key
+app.config['RECAPTCHA_PUBLIC_KEY'] = 'your public key goes here' #ToDo replace this with your private key
+app.config['RECAPTCHA_PRIVATE_KEY'] = 'your private key goes here' #ToDo replace this with your private key
 app.logger.addHandler(file_handler)
 
 @app.route('/')
