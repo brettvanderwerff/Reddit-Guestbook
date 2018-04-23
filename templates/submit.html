@@ -20,10 +20,13 @@
       <p class="text">(100 character limit.)</p>
       <input type="text" class="form-control" id="message" placeholder="Enter Message" name="message">
     </div>
-      {{ form.recaptcha }}
       {% for error in form.message.errors %}
         <div class="alert alert-warning">{{ error }}</div>
       {% endfor %}
+      {% for error in form.recaptcha.errors %}
+        <div class="alert alert-warning">{{ error }}</div>
+      {% endfor %}
+      {{ form.recaptcha }}
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
