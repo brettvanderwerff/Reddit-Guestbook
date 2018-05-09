@@ -1,7 +1,5 @@
 # Reddit-Guestbook
 
-==Work in Progress==
-
 ~~~~~~~~~~~
 Description
 ~~~~~~~~~~~
